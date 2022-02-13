@@ -5,7 +5,7 @@ systemctl --user enable pipewire
 systemctl --user enable pipewire-pulse
 
 echo "" >> ~/.bashrc
-echo "[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx" >> ~/.bashrc
+echo '[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx' >> ~/.bashrc
 echo "exec fish" >> ~/.bashrc
 
 echo "xset -b" > ~/.xinitrc
